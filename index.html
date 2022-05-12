@@ -36,11 +36,14 @@
     </div>
 
     <button class = "spindisk" onclick="gospindisk()">Spin</button>
+    <!-- <button class = "spindisk" id="myBtn">Spin</button> -->
     
 </body>
 <script>
+    // document.getElementById("myBtn").addEventListener("click", gospindisk);
+    var dgr = 360*37
     function gospindisk(){
-        var dgr = ((Math.random()*10)+5)*10000;
+        dgr = dgr+360*37
         document.getElementById("prm").style.transform="rotate("+dgr+"deg)";
     }
 </script>
