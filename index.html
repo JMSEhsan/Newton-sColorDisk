@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton's Color Disk</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <!-- Ref.: https://www.youtube.com/watch?v=BwaonzIVsJU -->
+
+    <div class = "disk">
+        <div class = "prm" id="prm">
+            <div class = "secs">
+                <span class = "spnsec1"></span>
+                <span class = "spnsec2"></span>
+                <span class = "spnsec3"></span>
+                <span class = "spnsec4"></span>
+                <span class = "spnsec5"></span>
+                <span class = "spnsec6"></span>
+                <span class = "spnsec7"></span>
+                <span class = "spnsec8"></span>
+                <span class = "spnsec9"></span>
+                <span class = "spnsec10"></span>
+                <span class = "spnsec11"></span>
+                <span class = "spnsec12"></span>
+                <span class = "spnsec13"></span>
+                <span class = "spnsec14"></span>
+              
+            </div>
+
+        </div>   
+    </div>
+
+    <button class = "spindisk" onclick="gospindisk()">Spin</button>
+    
+</body>
+<script>
+    function gospindisk(){
+        var dgr = ((Math.random()*10)+5)*10000;
+        document.getElementById("prm").style.transform="rotate("+dgr+"deg)";
+    }
+</script>
+</html>
